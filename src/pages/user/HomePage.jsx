@@ -27,12 +27,13 @@ export default function HomePage() {
                             Mô tả triệu chứng của bạn, trợ lý AI sẽ tự động phân tích, gợi ý chuyên khoa phù hợp và đề xuất lịch khám với bác sĩ giỏi nhất.
                         </p>
                         <div className="flex flex-wrap gap-3 pt-2">
-                            <a
-                                href="#booking"
-                                className="px-6 py-3 rounded-xl bg-white text-sky-700 font-bold text-sm shadow-md hover:bg-sky-50 transition transform active:scale-95"
+                            <Link
+                                to="/reception/dashboard"
+                                className="px-6 py-3 rounded-xl bg-teal-400 hover:bg-teal-300 text-slate-900 font-bold text-sm shadow-md transition transform active:scale-95 flex items-center gap-2"
                             >
-                                Đặt lịch ngay
-                            </a>
+                                <span>🏥</span>
+                                <span>Cổng Lễ Tân (Receptionist Portal)</span>
+                            </Link>
                             <Link
                                 to="/login"
                                 className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-sm backdrop-blur-sm transition"
